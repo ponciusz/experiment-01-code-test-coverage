@@ -7,4 +7,7 @@ install:
   - npm install
 
 script:
-  - npm run coveralls && npm run build
+  - COVERALLS_REPO_TOKEN=$coveralls_repo_token npm run coveralls && 
+
+after_script:
+  -  npm run build
