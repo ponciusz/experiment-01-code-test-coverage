@@ -17,7 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "coverage": "react-scripts test --env=jsdom --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "coverage": "react-scripts test --env=jsdom --coverage",
+    "coveralls": "react-scripts test --env=jsdom --coverage --coverageReporters=text-lcov | coveralls"
   },
   "devDependencies": {
     "enzyme": "^3.5.0",
